@@ -1,10 +1,22 @@
-var age = Number(prompt("Оцените сервис по шкале от 1-10").trim());
+var trafficLight = {
+    red: "красный",
+    yellow: "желтый",
+    green: "зеленый"
+}
 
-if (age >= 5 && age < 11) {
-    alert("Спасибо за высокую оценку!");
-} else if (age < 5 && age > 0) {
-    alert("Мы работаем над улучшением сервиса!");
-} else {
-    alert("Оцените сервис по шкале от 1-10")
+var traffic = prompt("Выберите один из цветов светофора: ").toLocaleLowerCase().trim()
 
+if(traffic === trafficLight.red){
+    alert('Стоп')
+}else if(traffic === trafficLight.yellow){
+    alert('Подождите')
+}else if(traffic === trafficLight.green){
+    alert('Езжайте')
+}else{
+    alert('Выберите один из цветов светофора:')
+}
+
+
+for (let i = 20; i >= 0; i--) {
+    console.log(i);
 }
