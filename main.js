@@ -15,8 +15,6 @@ if(traffic === trafficLight.red){
 }else{
     alert('Выберите один из цветов светофора:')
 }
-
-
 for (let i = 20; i >= 0; i--) {
     console.log(i);
 }
